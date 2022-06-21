@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
+  min-height: 72rem;
+  min-width: 50.5rem;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+// letting the number input without the arrows
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
